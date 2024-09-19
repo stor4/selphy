@@ -1,1 +1,17 @@
 console.log('components');
+
+import './components/jquery-price-slider.js'
+import './components/jquery.nivo.slider.pack.js'
+import './components/plugins.js'
+import './components/bootstrap.min.js'
+import './components/dbclick.min.js'
+import './components/jquery-price-slider.js'
+import './components/jquery.countdown.min.js'
+import './components/jquery.meanmenu.min.js'
+// import './components/meanmenu.js'
+import './components/jquery.scrollUp.min.js'
+import './components/jquery.simpleGallery.min.js'
+import './components/jquery.simpleLens.min.js'
+import './components/owl.carousel.min.js'
+import './components/popper.min.js'
+import './components/main.js'
