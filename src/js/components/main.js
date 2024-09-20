@@ -54,434 +54,503 @@ import $ from 'jquery';
  owl active
 ------------------------------ */
   	/* Bestsell Carousel */
-	$("#bestsell-carousel").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:true,
-		addClassActive:true,
-		items : 5,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:4,
-			},
-			1200:{
-				items:5,
-			}
-		}
-	});
-
-	/* Bestsell Carousel 2 */
-	$("#bestsell-carousel-2").owlCarousel({
-		autoPlay: false,
-		slideSpeed: 2000,
-		dots: false,
-		nav: true,
-		addClassActive: true,
-		items : 4,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:4,
-			},
-			1200:{
-				items:4,
-			}
-		}
-	});
-
-	/* Most Viewed Carousel */
-	$("#most-viewed-carousel").owlCarousel({
-		autoPlay: false,
-		slideSpeed: 2000,
-		dots: false,
-		nav: true,
-		addClassActive: true,
-		items : 5,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:4,
-			},
-			1200:{
-				items:5,
-			}
-		}
-	});
-
-	/* Most Viewed Carousel 2 */
-	$("#most-viewed-carousel-2").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:true,
-		addClassActive:true,
-		items : 4,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:3,
-			},
-			1200:{
-				items:4,
-			}
-		}
-	});
-
-	/* Random Carousel */
-	$("#random-carousel").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:true,
-		addClassActive:true,
-		items : 5,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:4,
-			},
-			1200:{
-				items:5,
-			}
-		}
-	});
-
-	/* Random Carousel 2 */
-	$("#random-carousel-2").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:true,
-		addClassActive:true,
-		items : 4,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:3,
-			},
-			1200:{
-				items:4,
-			}
-		}
-	});
-
-	/* Laptop Carousel */
-	$("#laptop-carousel").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:true,
-		addClassActive:true,
-		items : 4,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:3,
-			},
-			1200:{
-				items:4,
-			}
-		}
-	});
-
-	/* Laptop Carousel 2 */
-	$("#laptop-carousel-2").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:true,
-		addClassActive:true,
-		items : 5,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:4,
-			},
-			1200:{
-				items:5,
-			}
-		}
-	});
-
-  /* Laptop Carousel 3 */
-  $("#laptop-carousel-3").owlCarousel({
-      autoPlay: false,
-	  slideSpeed:2000,
-	  dots:false,
-	  nav:true,
-	  addClassActive:true,
-      items : 4,
-	  /* transitionStyle : "fade", */    /* [This code for animation ] */
-	  navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-      itemsDesktop : [1199,4],
-	  itemsDesktopSmall : [980,3],
-	  itemsTablet: [768,2],
-	  itemsMobile : [479,1],
+  document.addEventListener('DOMContentLoaded', function () {
+    const carouselElement = document.querySelector('#bestsell-carousel');
+    if (carouselElement && carouselElement.children.length > 0) {
+      new OwlCarousel('#bestsell-carousel', {
+        items: 5,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 4 },
+          1200: { items: 5 }
+        }
+      });
+    } else {
+      console.error('Carousel element not found or empty.');
+    }
   });
 
+
+
+	/* Bestsell Carousel 2 */
+  document.addEventListener('DOMContentLoaded', function () {
+    const bestsellerCarousel2 = document.querySelector('#bestsell-carousel-2');
+    if (bestsellerCarousel2 && bestsellerCarousel2.children.length > 0) {
+      new OwlCarousel('#bestsell-carousel-2', {
+        items: 4,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 4 },
+          1200: { items: 4 }
+        }
+      });
+    }
+  });
+
+
+	/* Most Viewed Carousel */
+  document.addEventListener('DOMContentLoaded', function () {
+    const mostViewedCarousel = document.querySelector('#most-viewed-carousel');
+    if (mostViewedCarousel && mostViewedCarousel.children.length > 0) {
+      new OwlCarousel('#most-viewed-carousel', {
+        items: 5,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 4 },
+          1200: { items: 5 }
+        }
+      });
+    }
+  });
+
+	/* Most Viewed Carousel 2 */
+	document.addEventListener('DOMContentLoaded', function () {
+  const mostViewedCarousel2 = document.querySelector('#most-viewed-carousel-2');
+  if (mostViewedCarousel2 && mostViewedCarousel2.children.length > 0) {
+    new OwlCarousel('#most-viewed-carousel-2', {
+      items: 4,
+      loop: true,
+      autoplay: false,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      mouseDrag: true,
+      touchDrag: true,
+      lazyLoad: true,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        768: { items: 3 },
+        992: { items: 3 },
+        1200: { items: 4 }
+      }
+    });
+  }
+});
+
+	/* Random Carousel */
+  document.addEventListener('DOMContentLoaded', function () {
+    const randomCarousel = document.querySelector('#random-carousel');
+    if (randomCarousel && randomCarousel.children.length > 0) {
+      new OwlCarousel('#random-carousel', {
+        items: 5,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 4 },
+          1200: { items: 5 }
+        }
+      });
+    }
+  });
+
+
+	/* Random Carousel 2 */
+  document.addEventListener('DOMContentLoaded', function () {
+    const randomCarousel2 = document.querySelector('#random-carousel-2');
+    if (randomCarousel2 && randomCarousel2.children.length > 0) {
+      new OwlCarousel('#random-carousel-2', {
+        items: 4,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 3 },
+          1200: { items: 4 }
+        }
+      });
+    }
+  });
+
+	/* Laptop Carousel */
+  document.addEventListener('DOMContentLoaded', function () {
+    const laptopCarousel = document.querySelector('#laptop-carousel');
+    if (laptopCarousel && laptopCarousel.children.length > 0) {
+      new OwlCarousel('#laptop-carousel', {
+        items: 4,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 3 },
+          1200: { items: 4 }
+        }
+      });
+    }
+  });
+
+	/* Laptop Carousel 2 */
+  document.addEventListener('DOMContentLoaded', function () {
+    const laptopCarousel2 = document.querySelector('#laptop-carousel-2');
+    if (laptopCarousel2 && laptopCarousel2.children.length > 0) {
+      new OwlCarousel('#laptop-carousel-2', {
+        items: 5,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 4 },
+          1200: { items: 5 }
+        }
+      });
+    }
+  });
+
+  /* Laptop Carousel 3 */
+  document.addEventListener('DOMContentLoaded', function () {
+    const laptopCarousel3 = document.querySelector('#laptop-carousel-3');
+    if (laptopCarousel3 && laptopCarousel3.children.length > 0) {
+      new OwlCarousel('#laptop-carousel-3', {
+        items: 4,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          992: { items: 4 }
+        }
+      });
+    }
+  });
+
+
 	/* Tablet Carousel */
-	$("#tablet-carousel").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:true,
-		addClassActive:true,
-		items : 4,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:3,
-			},
-			1200:{
-				items:4,
-			}
-		}
-	});
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabletCarousel = document.querySelector('#tablet-carousel');
+    if (tabletCarousel && tabletCarousel.children.length > 0) {
+      new OwlCarousel('#tablet-carousel', {
+        items: 4,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 3 },
+          1200: { items: 4 }
+        }
+      });
+    }
+  });
+
 
 	/* Tablet Carousel 2 */
-	$("#tablet-carousel-2").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:true,
-		addClassActive:true,
-		items : 5,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:3,
-			},
-			992:{
-				items:4,
-			},
-			1200:{
-				items:5,
-			}
-		}
-	});
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabletCarousel2 = document.querySelector('#tablet-carousel-2');
+    if (tabletCarousel2 && tabletCarousel2.children.length > 0) {
+      new OwlCarousel('#tablet-carousel-2', {
+        items: 5,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 4 },
+          1200: { items: 5 }
+        }
+      });
+    }
+  });
+
 
   /* Tablet Carousel 3 */
-  $("#tablet-carousel-3").owlCarousel({
-      autoPlay: false,
-	  slideSpeed:2000,
-	  dots:false,
-	  nav:true,
-	  addClassActive:true,
-      items : 4,
-	  /* transitionStyle : "fade", */    /* [This code for animation ] */
-	  navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-      itemsDesktop : [1199,4],
-	  itemsDesktopSmall : [980,3],
-	  itemsTablet: [768,2],
-	  itemsMobile : [479,1],
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabletCarousel3 = document.querySelector('#tablet-carousel-3');
+    if (tabletCarousel3 && tabletCarousel3.children.length > 0) {
+      new OwlCarousel('#tablet-carousel-3', {
+        items: 4,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          992: { items: 4 }
+        }
+      });
+    }
   });
 
 	/* Timer Product Carousel */
-	$("#timer-product-carousel").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:true,
-		addClassActive:true,
-		items : 1,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:1,
-			},
-			576:{
-				items:2,
-			},
-			768:{
-				items:2,
-			},
-			992:{
-				items:1,
-			}
-		}
-	});
+  document.addEventListener('DOMContentLoaded', function () {
+    const timerProductCarousel = document.querySelector('#timer-product-carousel');
+    if (timerProductCarousel && timerProductCarousel.children.length > 0) {
+      new OwlCarousel('#timer-product-carousel', {
+        items: 1,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 2 },
+          992: { items: 1 }
+        }
+      });
+    }
+  });
 
 	/* Client Carousel */
-	$("#client-carousel").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:true,
-		nav:false,
-		addClassActive:true,
-		items : 1,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-	});
+  document.addEventListener('DOMContentLoaded', function () {
+    const clientCarousel = document.querySelector('#client-carousel');
+    if (clientCarousel && clientCarousel.children.length > 0) {
+      new OwlCarousel('#client-carousel', {
+        items: 1,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: false,
+        dots: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+      });
+    }
+  });
 
 	/* Blog Post Carousel */
-	$("#blog-post-carousel").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:true,
-		nav:false,
-		addClassActive:true,
-		items : 1,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-	});
+  document.addEventListener('DOMContentLoaded', function () {
+    const blogPostCarousel = document.querySelector('#blog-post-carousel');
+    if (blogPostCarousel && blogPostCarousel.children.length > 0) {
+      new OwlCarousel('#blog-post-carousel', {
+        items: 1,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: false,
+        dots: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+      });
+    }
+  });
 
 	/* Logo Carousel */
-	$("#logo-carousel").owlCarousel({
-		autoPlay: false,
-		slideSpeed:2000,
-		dots:false,
-		nav:false,
-		addClassActive:true,
-		items : 4,
-		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		responsive:{
-			0:{
-				items:2,
-			},
-			576:{
-				items:3,
-			},
-			768:{
-				items:4,
-			},
-			992:{
-				items:4,
-			},
-			1200:{
-				items:4,
-			}
-		}
-	});
+	document.addEventListener('DOMContentLoaded', function () {
+    const logoCarousel = document.querySelector('#logo-carousel');
+    if (logoCarousel && logoCarousel.children.length > 0) {
+      new OwlCarousel('#logo-carousel', {
+        items: 4,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: false,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 2 },
+          576: { items: 3 },
+          768: { items: 4 },
+          992: { items: 4 },
+          1200: { items: 4 }
+        }
+      });
+    }
+  });
 
   /* Single Product */
-  $("#single-product").owlCarousel({
-	  autoPlay: false,
-	  slideSpeed:2000,
-	  dots:false,
-	  nav:true,
-	  items : 1,
-	  navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-	  itemsDesktop : [1199,1],
-	  itemsDesktopSmall : [980,1],
-	  itemsTablet: [768,1],
-	  itemsMobile : [479,1],
+  document.addEventListener('DOMContentLoaded', function () {
+    const singleProductCarousel = document.querySelector('#single-product');
+    if (singleProductCarousel && singleProductCarousel.children.length > 0) {
+      new OwlCarousel('#single-product', {
+        items: 1,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          768: { items: 1 }
+        }
+      });
+    }
   });
 
   /* Releted Product */
-  $("#related-products-carousel").owlCarousel({
-	  autoPlay: false,
-	  slideSpeed:2000,
-	  dots:false,
-	  nav:true,
-	  items : 5,
-	  /* transitionStyle : "fade", */    /* [This code for animation ] */
-	  navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-	  itemsDesktop : [1199,4],
-	  itemsDesktopSmall : [980,3],
-	  itemsTablet: [768,2],
-	  itemsMobile : [479,1],
+  document.addEventListener('DOMContentLoaded', function () {
+    const relatedProductsCarousel = document.querySelector('#related-products-carousel');
+    if (relatedProductsCarousel && relatedProductsCarousel.children.length > 0) {
+      new OwlCarousel('#related-products-carousel', {
+        items: 5,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          479: { items: 1 },
+          768: { items: 2 },
+          980: { items: 3 },
+          1199: { items: 4 }
+        }
+      });
+    }
   });
 
   /* Upsell Product */
-  $("#upsell-products-carousel").owlCarousel({
-	  autoPlay: false,
-	  slideSpeed:2000,
-      dots:false,
-	  nav:true,
-	  items : 5,
-	  /* transitionStyle : "fade", */    /* [This code for animation ] */
-	  navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-	  itemsDesktop : [1199,4],
-	  itemsDesktopSmall : [980,3],
-	  itemsTablet: [768,2],
-	  itemsMobile : [479,1],
+  document.addEventListener('DOMContentLoaded', function () {
+    const upsellProductsCarousel = document.querySelector('#upsell-products-carousel');
+    if (upsellProductsCarousel && upsellProductsCarousel.children.length > 0) {
+      new OwlCarousel('#upsell-products-carousel', {
+        items: 5,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        touchDrag: true,
+        lazyLoad: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+          0: { items: 1 },
+          479: { items: 1 },
+          768: { items: 2 },
+          980: { items: 3 },
+          1199: { items: 4 }
+        }
+      });
+    }
   });
 
 /*----------------------------

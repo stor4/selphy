@@ -217,7 +217,7 @@ body {
   margin-left: 6px;
 }
 .header-link ul li a.english:before{
-	background: rgba(0, 0, 0, 0) url("../images/icon/english1.webp") no-repeat scroll 0 3px;
+	background: rgba(0, 0, 0, 0) url("../../img/icon/english1.webp") no-repeat scroll 0 3px;
 	content: "";
 	float: left;
 	height: 20px;
@@ -226,7 +226,7 @@ body {
 	width: 15px;
 }
 .header-link ul li a.usd:before{
-	background: rgba(0, 0, 0, 0) url("../images/icon/imgtop4.webp") no-repeat scroll 0 2px;
+	background: rgba(0, 0, 0, 0) url("../../img/icon/imgtop4.webp") no-repeat scroll 0 2px;
 	content: "";
 	float: left;
 	height: 20px;
@@ -235,7 +235,7 @@ body {
 	width: 15px;
 }
 .header-link ul li a.account:before{
-	background: rgba(0, 0, 0, 0) url("../images/icon/imgtop3.webp") no-repeat scroll 0 2px;
+	background: rgba(0, 0, 0, 0) url("../../img/icon/imgtop3.webp") no-repeat scroll 0 2px;
 	content: "";
 	float: left;
 	height: 20px;
@@ -1410,6 +1410,9 @@ h2.product-name a:hover{
 	font-size: 10px;
 	font-weight: bold;
 	text-align: left;
+}
+.custom-carousel-2 {
+  overflow: hidden;
 }
 .custom-carousel-2 .owl-dots button.owl-dot.active {
   background: #0F93D2;
