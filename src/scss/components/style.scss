@@ -130,6 +130,10 @@ body {
     width: auto;
 }
 
+.owl-carousel {
+  overflow: hidden;
+}
+
 /*======================================
   2. Header Area CSS
 ========================================*/
@@ -171,7 +175,7 @@ body {
 	position: relative;
 }
 .header-login a:before{
-	background: rgba(0, 0, 0, 0) url("../images/icon/lock.webp") no-repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) url("../../img/icon/lock.webp") no-repeat scroll 0 0;
 	content: "";
 	display: block;
 	float: left;
