@@ -8,5 +8,18 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --light-color: #fff;
+  --primary: #0091d5;
+  --primary2: #00a9e0;
+  --secondary: #fbb203;
+  --text-body: #5c5c5c
+  --text: #6a6a6a;
+  --text-white: #fff;
+  --text2: #222;
+  --background: #fff;
+  --header-top: #0083c1;
+  --light-color: #e5e5e5;
+  --footer-bottom: #3b3d3d;
+  --footer-top: #f0f0f0;
+  --scrollUp: #73D33F;
+  --scrollUpHover: #FF9C00;
 }

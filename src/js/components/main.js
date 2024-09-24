@@ -581,19 +581,30 @@ import $ from 'jquery';
 /*----------------------------
   Simple Lence Active
 ------------------------------ */
-	$('#p-view .simpleLens-lens-image').simpleLens({
-		loading_image: 'img/products/single-product/loading.gif'
-	});
+
+const lensImages = document.querySelectorAll('#p-view .simpleLens-lens-image');
+
+
+lensImages.forEach(function(lensImage) {
+  simpleLens.call(lensImage, {
+    lensImageAttr: 'data-lens-image',
+    openLensEvent: 'mouseenter',
+    loadingImage: '../../img/products/single-product/medium/1.webp'
+  });
+});
+
 
 /*--------------------------
  scrollUp
 ---------------------------- */
-	$.scrollUp({
-        scrollText: '<i class="fa fa-angle-up"></i>',
-        easingType: 'linear',
-        scrollSpeed: 900,
-        animation: 'fade'
-    });
+scrollUp({
+  scrollDistance: 300,
+  scrollSpeed: 300,
+  animation: 'fade',
+  scrollText: '',
+  zIndex: 2147483647
+});
+
 
 /*--------------------------
  collapse
