@@ -27,18 +27,21 @@ import $ from 'jquery';
 	});
 
 /*----------------------------
- main slider
+ HeaderDropdown
 ------------------------------ */
-	// $('#mainSlider').nivoSlider({
-	// 	directionNav: true,
-	// 	animSpeed: 500,
-	// 	slices: 18,
-	// 	pauseTime: 5000,
-	// 	pauseOnHover: false,
-	// 	controlNav: false,
-	// 	prevText: '<i class="fa fa-angle-left nivo-prev-icon"></i>',
-	// 	nextText: '<i class="fa fa-angle-right nivo-next-icon"></i>'
-	// });
+
+const headerDropdownBtn = document.querySelector('.product-categori')
+const headerDropdownList = document.querySelector('.product-categori-list')
+
+headerDropdownBtn.addEventListener('click', function() {
+  if (headerDropdownList.style.display === 'none') {
+    headerDropdownList.style.display = 'block'
+  } else {
+    headerDropdownList.style.display = 'none'
+  }
+})
+
+
 
 /*----------------------------
  DB Select Js
