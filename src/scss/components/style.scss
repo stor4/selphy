@@ -4184,27 +4184,38 @@ width: 100%;}
 .product-categori {
   background: #f4f4f4;
   border: medium none;
-  color: #8e8e8e;
-  font-size: 13px;
-  font-style: italic;
+  color: #000;
+  font-size: 14px;
   height: 44px;
-  padding: 0 50px 0 15px;
+  padding: 12px 50px 0 15px;
   width: 100%;
+  min-width: 174px;
   outline: none;
-  border-right: 1px solid #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-right: 1px solid var(--primary);
   cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url(../../img/dropdown-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 9.6px;
+    width: 9.6px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+  }
+
 }
 
 .product-categori-list {
   display: none;
   background: #f4f4f4;
   border: medium none;
-  color: #8e8e8e;
-  font-size: 13px;
-  font-style: italic;
+  color: #000;
+  font-size: 14px;
   padding: 0 50px 0 15px;
   width: 100%;
   outline: none;

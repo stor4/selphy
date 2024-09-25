@@ -32,14 +32,25 @@ import $ from 'jquery';
 
 const headerDropdownBtn = document.querySelector('.product-categori')
 const headerDropdownList = document.querySelector('.product-categori-list')
+const headerDropdownItems = document.getElementById("header-dropdown-li")
+
+function setValue(value) {
+  headerDropdownBtn.textContent = value.innerText
+  headerDropdownList.style.display = 'none'
+}
+
+window.setValue = setValue
 
 headerDropdownBtn.addEventListener('click', function() {
-  if (headerDropdownList.style.display === 'none') {
-    headerDropdownList.style.display = 'block'
-  } else {
-    headerDropdownList.style.display = 'none'
-  }
+  event.stopPropagation();
+  headerDropdownList.style.display = headerDropdownList.style.display === 'none' ? 'block' : 'none';
 })
+
+document.addEventListener('click', function(event) {
+  if (!headerDropdownList.contains(event.target) && event.target !== headerDropdownBtn) {
+    headerDropdownList.style.display = 'none';
+  }
+});
 
 
 
@@ -57,33 +68,35 @@ headerDropdownBtn.addEventListener('click', function() {
  owl active
 ------------------------------ */
   	/* Bestsell Carousel */
-  document.addEventListener('DOMContentLoaded', function () {
-    const carouselElement = document.querySelector('#bestsell-carousel');
-    if (carouselElement && carouselElement.children.length > 0) {
-      new OwlCarousel('#bestsell-carousel', {
-        items: 5,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 4 },
-          1200: { items: 5 }
-        }
-      });
-    } else {
-      console.error('Carousel element not found or empty.');
-    }
-  });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const carouselElement = document.querySelector('#bestsell-carousel');
+  //   if (carouselElement && carouselElement.children.length > 0) {
+  //     new OwlCarousel('#bestsell-carousel', {
+  //       items: 5,
+  //       loop: true,
+  //       autoplay: false,
+  //       autoplayTimeout: 2000,
+  //       autoplayHoverPause: true,
+  //       mouseDrag: true,
+  //       touchDrag: true,
+  //       lazyLoad: true,
+  //       nav: true,
+  //       dots: false,
+  //       navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+  //       responsive: {
+  //         0: { items: 1 },
+  //         576: { items: 2 },
+  //         768: { items: 3 },
+  //         992: { items: 4 },
+  //         1200: { items: 5 }
+  //       }
+  //     });
+  //   } else {
+  //     console.error('Carousel element not found or empty.');
+  //   }
+  // });
+
+
 
 
 
