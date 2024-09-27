@@ -366,7 +366,7 @@ body {
 .search-form{
 	position: relative;
 	flex-grow: 1;
-	max-width: 300px;
+	// max-width: 300px;
 	width: 100%;
 }
 .header-search input{
@@ -727,47 +727,170 @@ body {
 /*----------------------------------------
   3.3. Mobile Menu CSS
 ----------------------------------------*/
-.mean-container .mean-nav {
-  background: #faf8f8 none repeat scroll 0 0;
-}
-.mean-container .mean-nav ul li a {
-  border-top: 1px solid #E0D8D8;
-  color: var(--text2);
-}
-.mean-container .mean-nav ul li a:hover {
-  background: none;
-  color:var(--primary2);
-}
-.mean-container .mean-nav ul li a.mean-expand:hover {
-  background: none;
-}
-.mean-container .mean-nav ul li li a {
-  border-top: 1px solid #E0D8D8;
+// .mean-container .mean-nav {
+//   background: #faf8f8 none repeat scroll 0 0;
+// }
+// .mean-container .mean-nav ul li a {
+//   border-top: 1px solid #E0D8D8;
+//   color: var(--text2);
+// }
+// .mean-container .mean-nav ul li a:hover {
+//   background: none;
+//   color:var(--primary2);
+// }
+// .mean-container .mean-nav ul li a.mean-expand:hover {
+//   background: none;
+// }
+// .mean-container .mean-nav ul li li a {
+//   border-top: 1px solid #E0D8D8;
 
+// }
+// .mean-container a.meanmenu-reveal {
+//   padding: 15px 13px;
+// }
+// .mean-container .mean-nav ul li a.mean-expand {
+//   height: 18px;
+//   padding: 10px 12px 14px !important;
+// }
+// .mean-bar:before {
+// 	color: var(--text-white);
+// 	content: "Categories";
+// 	font-size: 20px;
+// 	font-weight: normal;
+// 	left: 10px;
+// 	padding: 0;
+// 	position: absolute;
+// 	text-transform: uppercase;
+// 	top: 15px;
+// }
+// .mean-container .mean-bar {
+// 	background: #0083c1 none repeat scroll 0 0;
+// 	margin-bottom: 1px;
+// 	z-index: 999;
+// 	border: 1px solid #0083C1;
+// }
+
+// .show {
+//   display: block !important;
+  // transform: translateY(0);
+// }
+
+.mobile-menu-nav,
+.sub-menu {
+  display: none;
 }
-.mean-container a.meanmenu-reveal {
-  padding: 15px 13px;
+
+/* Активное меню */
+.mobile-menu-show {
+  display: block !important;
 }
-.mean-container .mean-nav ul li a.mean-expand {
-  height: 18px;
-  padding: 10px 12px 14px !important;
+
+/* Показ подменю */
+.sub-menu-show {
+  display: block !important;
 }
-.mean-bar:before {
-	color: var(--text-white);
-	content: "Categories";
-	font-size: 20px;
-	font-weight: normal;
-	left: 10px;
-	padding: 0;
-	position: absolute;
-	text-transform: uppercase;
-	top: 15px;
+
+.sub-menu-btn {
+  position: relative;
+
+  &::after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    font-size: 24px;
+  }
 }
-.mean-container .mean-bar {
-	background: #0083c1 none repeat scroll 0 0;
-	margin-bottom: 1px;
-	z-index: 999;
-	border: 1px solid #0083C1;
+
+.mobile-menu {
+  position: relative;
+
+  &-group {
+    .sub-menu {
+      display: none;
+
+      li > a {
+        // color: green;
+        opacity: .75;
+        padding-left: 50px;
+      }
+    }
+
+    .sub-sub-menu {
+      li > a {
+        padding-left: 100px;
+      }
+    }
+  }
+
+  &-list {
+    // border: 1px solid #0083C1;
+    width: 100%;
+  }
+
+  nav {
+    border: 1px solid #0083C1;
+    position: relative;
+    // transform: translateY(-395px);
+    display: none;
+  }
+
+
+  a {
+    display: block;
+    float: left;
+    width: 90%;
+    padding: 1em 5%;
+    margin: 0;
+    text-align: left;
+    border: 1px solid #0083C1;
+    border-top: 1px solid #E0D8D8;
+    border-bottom: none;
+    color: #222;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  &-btn {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border: 1px solid #0083C1;
+    background: #0083c1 none repeat scroll 0 0;
+    min-height: 53px;
+    padding: 15px 0 4px 10px;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+    span {
+      background: #fff;
+      display: block;
+      height: 2px;
+      margin-top: 3px;
+      position: absolute;
+      width: 22px;
+      right: 15px;
+      top: 20px;
+
+      &::after, &::before {
+        content: '';
+        background: #fff;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        top: -5px;
+        left: 0;
+      }
+
+      &::before {
+        top: auto;
+        bottom: -5px;
+      }
+    }
+  }
 }
 /*======================================
   4. Main Slider Area CSS
@@ -4232,6 +4355,59 @@ width: 100%;}
   }
 }
 
+.range-slider {
+  position: relative;
+  width: 176px;
+  padding: 30px 0;
+}
+
+.range-slider .thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+}
+
+.range-slider .thumb::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #333;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.range-slider .slider-track {
+  position: absolute;
+  height: 8px;
+  top: 30px;
+  left: 0;
+  right: 0;
+  background: #ddd;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.range-slider .range-values {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.range-slider .slider-track::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background: var(--primary);
+  z-index: 2;
+  border-radius: 5px;
+}
 
 
 

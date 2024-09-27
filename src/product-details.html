@@ -93,20 +93,22 @@
 									</div>
 									<!-- Simple Lence Thumbnail -->
 									<div class="simpleLens-thumbnails-container">
-										<div id="single-product" class="owl-carousel custom-carousel">
-											<ul class="nav nav-tabs" role="tablist">
-												<li><a class="active" href="#p-view-1" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/1.webp" alt="productd"></a></li>
-												<li class=""><a href="#p-view-2" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/2.webp" alt="productd"></a></li>
-												<li class="last-li"><a href="#p-view-3" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/3.webp" alt="productd"></a></li>
-												<li class="d-none d-xl-block"><a href="#p-view-4" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/4.webp" alt="productd"></a></li>
-											</ul>
-											<ul class="nav nav-tabs" role="tablist">
-												<li class=""><a class="active" href="#p-view-5" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/1.webp" alt="productd"></a></li>
-												<li class=""><a href="#p-view-6" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/2.webp" alt="productd"></a></li>
-												<li class="last-li"><a href="#p-view-7" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/3.webp" alt="productd"></a></li>
-												<li class="d-none d-xl-block"><a href="#p-view-8" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/4.webp" alt="productd"></a></li>
-											</ul>
-										</div>
+                    <div class="swiper productThumbnail-swiper">
+                      <div class="swiper-wrapper nav nav-tabs" role="tablist">
+                        <div class="swiper-slide">
+                          <li><a class="active" href="#p-view-1" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/1.webp" alt="productd"></a></li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class=""><a href="#p-view-2" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/2.webp" alt="productd"></a></li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class="last-li"><a href="#p-view-3" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/3.webp" alt="productd"></a></li>
+                        </div>
+                        <div class="swiper-slide">
+                          <li class="d-none d-xl-block"><a href="#p-view-4" role="tab" data-bs-toggle="tab"><img src="./img/products/single-product/thumbnail/4.webp" alt="productd"></a></li>
+                        </div>
+                      </div>
+                    </div>
 									</div><!-- End Simple Lence Thumbnail -->
 								</div><!-- End Simple Lence Gallery Container -->
 							</div><!-- End Single Product View -->
@@ -351,69 +353,10 @@
 							<!-- Product View Area -->
 							<div class="product-view-area fix">
 								<!-- Single Product Category Related Products -->
-								<div class="single-product-category related-products">
-									<!-- Product Category Title-->
-									<div class="head-title">
-										<p>Related Products</p>
-									</div>
-									<!-- Product View -->
-									<div class="product-view">
-										<!-- Product View Carousel -->
-										<div id="related-products-carousel" class="owl-carousel custom-carousel">
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-sale">hot</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s5.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Etiam gravida</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p><span>$111.00</span>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-new">New</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s2.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
+                 <div class="swiper products-carousel relatedProducts">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="singel-product single-product-col">
 												<div class="label-pro-sale">hot</div>
 												<!-- Single Product Image -->
 												<div class="single-product-img">
@@ -437,35 +380,10 @@
 														<p><span>$114.00</span>$99.00</p>
 													</div>
 												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-sale">hot</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p><span>$345.00</span>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
+											</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="singel-product single-product-col">
 												<div class="label-pro-new">New</div>
 												<!-- Single Product Image -->
 												<div class="single-product-img">
@@ -489,9 +407,37 @@
 														<p>$99.00</p>
 													</div>
 												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
+											</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="singel-product single-product-col">
+												<div class="label-pro-new">New</div>
+												<!-- Single Product Image -->
+												<div class="single-product-img">
+													<a href="#"><img src="./img/products/s1.webp" alt="product"></a>
+												</div>
+												<!-- Single Product Content -->
+												<div class="single-product-content">
+													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Nunc facilisis</a></h2>
+													<div class="ratings">
+														<div class="rating-box">
+															<div class="rating">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+															</div>
+														</div>
+													</div>
+													<div class="product-price">
+														<p>$99.00</p>
+													</div>
+												</div><!-- End Single Product Content -->
+											</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="singel-product single-product-col">
 												<div class="label-pro-new">New</div>
 												<!-- Single Product Image -->
 												<div class="single-product-img">
@@ -515,9 +461,10 @@
 														<p>$99.00</p>
 													</div>
 												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
+											</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="singel-product single-product-col">
 												<div class="label-pro-new">New</div>
 												<!-- Single Product Image -->
 												<div class="single-product-img">
@@ -541,9 +488,10 @@
 														<p>$99.00</p>
 													</div>
 												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
+											</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="singel-product single-product-col">
 												<div class="label-pro-new">New</div>
 												<!-- Single Product Image -->
 												<div class="single-product-img">
@@ -567,9 +515,10 @@
 														<p>$99.00</p>
 													</div>
 												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
+											</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="singel-product single-product-col">
 												<div class="label-pro-sale">hot</div>
 												<!-- Single Product Image -->
 												<div class="single-product-img">
@@ -593,9 +542,10 @@
 														<p>$99.00</p>
 													</div>
 												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
+											</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="singel-product single-product-col">
 												<div class="label-pro-sale">hot</div>
 												<!-- Single Product Image -->
 												<div class="single-product-img">
@@ -619,10 +569,11 @@
 														<p><span>$345.00</span>$99.00</p>
 													</div>
 												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-										</div><!-- End Product View Carousel -->
-									</div><!-- End Product View-->
-								</div><!-- End Single Product Category -->
+											</div>
+                    </div>
+                  </div>
+                 </div>
+                <!-- End Single Product Category -->
 								<!-- Single Product Category UpSell Product -->
 								<div class="single-product-category upsell-products">
 									<!-- Product Category Title-->
@@ -632,216 +583,227 @@
 									<!-- Product View -->
 									<div class="product-view">
 										<!-- Product View Carousel -->
-										<div id="upsell-products-carousel" class="owl-carousel custom-carousel">
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-sale">hot</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s9.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html"> Donec ac tempus </a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p><span>$114.00</span>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-sale">hot</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p><span>$345.00</span>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-new">New</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s1.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Nunc facilisis</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-new">New</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s2.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">consequences</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-new">New</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s6.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-new">New</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s5.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Quisque in arcu</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-sale">hot</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s4.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-											<!-- Single Product -->
-											<div class="singel-product single-product-col">
-												<div class="label-pro-sale">hot</div>
-												<!-- Single Product Image -->
-												<div class="single-product-img">
-													<a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-												</div>
-												<!-- Single Product Content -->
-												<div class="single-product-content">
-													<h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Cras neque metus</a></h2>
-													<div class="ratings">
-														<div class="rating-box">
-															<div class="rating">
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-																<i class="fa fa-star"></i>
-															</div>
-														</div>
-													</div>
-													<div class="product-price">
-														<p><span>$345.00</span>$99.00</p>
-													</div>
-												</div><!-- End Single Product Content -->
-											</div><!-- End Single Product -->
-										</div><!-- End Product View Carousel -->
+                     <div class="swiper products-carousel upSell">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="singel-product single-product-col">
+                            <div class="label-pro-sale">hot</div>
+                            <!-- Single Product Image -->
+                            <div class="single-product-img">
+                              <a href="#"><img src="./img/products/s9.webp" alt="product"></a>
+                            </div>
+                            <!-- Single Product Content -->
+                            <div class="single-product-content">
+                              <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html"> Donec ac tempus </a></h2>
+                              <div class="ratings">
+                                <div class="rating-box">
+                                  <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product-price">
+                                <p><span>$114.00</span>$99.00</p>
+                              </div>
+                            </div><!-- End Single Product Content -->
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="singel-product single-product-col">
+                            <div class="label-pro-sale">hot</div>
+                            <!-- Single Product Image -->
+                            <div class="single-product-img">
+                              <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
+                            </div>
+                            <!-- Single Product Content -->
+                            <div class="single-product-content">
+                              <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
+                              <div class="ratings">
+                                <div class="rating-box">
+                                  <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product-price">
+                                <p><span>$345.00</span>$99.00</p>
+                              </div>
+                            </div><!-- End Single Product Content -->
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="singel-product single-product-col">
+                            <div class="label-pro-new">New</div>
+                            <!-- Single Product Image -->
+                            <div class="single-product-img">
+                              <a href="#"><img src="./img/products/s1.webp" alt="product"></a>
+                            </div>
+                            <!-- Single Product Content -->
+                            <div class="single-product-content">
+                              <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Nunc facilisis</a></h2>
+                              <div class="ratings">
+                                <div class="rating-box">
+                                  <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product-price">
+                                <p>$99.00</p>
+                              </div>
+                            </div><!-- End Single Product Content -->
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="singel-product single-product-col">
+                            <div class="label-pro-new">New</div>
+                            <!-- Single Product Image -->
+                            <div class="single-product-img">
+                              <a href="#"><img src="./img/products/s2.webp" alt="product"></a>
+                            </div>
+                            <!-- Single Product Content -->
+                            <div class="single-product-content">
+                              <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">consequences</a></h2>
+                              <div class="ratings">
+                                <div class="rating-box">
+                                  <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product-price">
+                                <p>$99.00</p>
+                              </div>
+                            </div><!-- End Single Product Content -->
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="singel-product single-product-col">
+                            <div class="label-pro-new">New</div>
+                            <!-- Single Product Image -->
+                            <div class="single-product-img">
+                              <a href="#"><img src="./img/products/s6.webp" alt="product"></a>
+                            </div>
+                            <!-- Single Product Content -->
+                            <div class="single-product-content">
+                              <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
+                              <div class="ratings">
+                                <div class="rating-box">
+                                  <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product-price">
+                                <p>$99.00</p>
+                              </div>
+                            </div><!-- End Single Product Content -->
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="singel-product single-product-col">
+                            <div class="label-pro-new">New</div>
+                            <!-- Single Product Image -->
+                            <div class="single-product-img">
+                              <a href="#"><img src="./img/products/s5.webp" alt="product"></a>
+                            </div>
+                            <!-- Single Product Content -->
+                            <div class="single-product-content">
+                              <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Quisque in arcu</a></h2>
+                              <div class="ratings">
+                                <div class="rating-box">
+                                  <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product-price">
+                                <p>$99.00</p>
+                              </div>
+                            </div><!-- End Single Product Content -->
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="singel-product single-product-col">
+                            <div class="label-pro-sale">hot</div>
+                            <!-- Single Product Image -->
+                            <div class="single-product-img">
+                              <a href="#"><img src="./img/products/s4.webp" alt="product"></a>
+                            </div>
+                            <!-- Single Product Content -->
+                            <div class="single-product-content">
+                              <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
+                              <div class="ratings">
+                                <div class="rating-box">
+                                  <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product-price">
+                                <p>$99.00</p>
+                              </div>
+                            </div><!-- End Single Product Content -->
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="singel-product single-product-col">
+                            <div class="label-pro-sale">hot</div>
+                            <!-- Single Product Image -->
+                            <div class="single-product-img">
+                              <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
+                            </div>
+                            <!-- Single Product Content -->
+                            <div class="single-product-content">
+                              <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Cras neque metus</a></h2>
+                              <div class="ratings">
+                                <div class="rating-box">
+                                  <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product-price">
+                                <p><span>$345.00</span>$99.00</p>
+                              </div>
+                            </div><!-- End Single Product Content -->
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                    <!-- End Product View Carousel -->
 									</div><!-- End Product View-->
 								</div><!-- End Single Product Category -->
 							</div><!-- End Product View Area -->

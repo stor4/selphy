@@ -65,511 +65,6 @@ document.addEventListener('click', function(event) {
 
 
 /*----------------------------
- owl active
------------------------------- */
-  	/* Bestsell Carousel */
-  // document.addEventListener('DOMContentLoaded', function () {
-  //   const carouselElement = document.querySelector('#bestsell-carousel');
-  //   if (carouselElement && carouselElement.children.length > 0) {
-  //     new OwlCarousel('#bestsell-carousel', {
-  //       items: 5,
-  //       loop: true,
-  //       autoplay: false,
-  //       autoplayTimeout: 2000,
-  //       autoplayHoverPause: true,
-  //       mouseDrag: true,
-  //       touchDrag: true,
-  //       lazyLoad: true,
-  //       nav: true,
-  //       dots: false,
-  //       navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-  //       responsive: {
-  //         0: { items: 1 },
-  //         576: { items: 2 },
-  //         768: { items: 3 },
-  //         992: { items: 4 },
-  //         1200: { items: 5 }
-  //       }
-  //     });
-  //   } else {
-  //     console.error('Carousel element not found or empty.');
-  //   }
-  // });
-
-
-
-
-
-	/* Bestsell Carousel 2 */
-  document.addEventListener('DOMContentLoaded', function () {
-    const bestsellerCarousel2 = document.querySelector('#bestsell-carousel-2');
-    if (bestsellerCarousel2 && bestsellerCarousel2.children.length > 0) {
-      new OwlCarousel('#bestsell-carousel-2', {
-        items: 4,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 4 },
-          1200: { items: 4 }
-        }
-      });
-    }
-  });
-
-
-	/* Most Viewed Carousel */
-  document.addEventListener('DOMContentLoaded', function () {
-    const mostViewedCarousel = document.querySelector('#most-viewed-carousel');
-    if (mostViewedCarousel && mostViewedCarousel.children.length > 0) {
-      new OwlCarousel('#most-viewed-carousel', {
-        items: 5,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 4 },
-          1200: { items: 5 }
-        }
-      });
-    }
-  });
-
-	/* Most Viewed Carousel 2 */
-	document.addEventListener('DOMContentLoaded', function () {
-  const mostViewedCarousel2 = document.querySelector('#most-viewed-carousel-2');
-  if (mostViewedCarousel2 && mostViewedCarousel2.children.length > 0) {
-    new OwlCarousel('#most-viewed-carousel-2', {
-      items: 4,
-      loop: true,
-      autoplay: false,
-      autoplayTimeout: 2000,
-      autoplayHoverPause: true,
-      mouseDrag: true,
-      touchDrag: true,
-      lazyLoad: true,
-      nav: true,
-      dots: false,
-      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-      responsive: {
-        0: { items: 1 },
-        576: { items: 2 },
-        768: { items: 3 },
-        992: { items: 3 },
-        1200: { items: 4 }
-      }
-    });
-  }
-});
-
-	/* Random Carousel */
-  document.addEventListener('DOMContentLoaded', function () {
-    const randomCarousel = document.querySelector('#random-carousel');
-    if (randomCarousel && randomCarousel.children.length > 0) {
-      new OwlCarousel('#random-carousel', {
-        items: 5,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 4 },
-          1200: { items: 5 }
-        }
-      });
-    }
-  });
-
-
-	/* Random Carousel 2 */
-  document.addEventListener('DOMContentLoaded', function () {
-    const randomCarousel2 = document.querySelector('#random-carousel-2');
-    if (randomCarousel2 && randomCarousel2.children.length > 0) {
-      new OwlCarousel('#random-carousel-2', {
-        items: 4,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 3 },
-          1200: { items: 4 }
-        }
-      });
-    }
-  });
-
-	/* Laptop Carousel */
-  document.addEventListener('DOMContentLoaded', function () {
-    const laptopCarousel = document.querySelector('#laptop-carousel');
-    if (laptopCarousel && laptopCarousel.children.length > 0) {
-      new OwlCarousel('#laptop-carousel', {
-        items: 4,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 3 },
-          1200: { items: 4 }
-        }
-      });
-    }
-  });
-
-	/* Laptop Carousel 2 */
-  document.addEventListener('DOMContentLoaded', function () {
-    const laptopCarousel2 = document.querySelector('#laptop-carousel-2');
-    if (laptopCarousel2 && laptopCarousel2.children.length > 0) {
-      new OwlCarousel('#laptop-carousel-2', {
-        items: 5,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 4 },
-          1200: { items: 5 }
-        }
-      });
-    }
-  });
-
-  /* Laptop Carousel 3 */
-  document.addEventListener('DOMContentLoaded', function () {
-    const laptopCarousel3 = document.querySelector('#laptop-carousel-3');
-    if (laptopCarousel3 && laptopCarousel3.children.length > 0) {
-      new OwlCarousel('#laptop-carousel-3', {
-        items: 4,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          768: { items: 2 },
-          992: { items: 4 }
-        }
-      });
-    }
-  });
-
-
-	/* Tablet Carousel */
-  document.addEventListener('DOMContentLoaded', function () {
-    const tabletCarousel = document.querySelector('#tablet-carousel');
-    if (tabletCarousel && tabletCarousel.children.length > 0) {
-      new OwlCarousel('#tablet-carousel', {
-        items: 4,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 3 },
-          1200: { items: 4 }
-        }
-      });
-    }
-  });
-
-
-	/* Tablet Carousel 2 */
-  document.addEventListener('DOMContentLoaded', function () {
-    const tabletCarousel2 = document.querySelector('#tablet-carousel-2');
-    if (tabletCarousel2 && tabletCarousel2.children.length > 0) {
-      new OwlCarousel('#tablet-carousel-2', {
-        items: 5,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 4 },
-          1200: { items: 5 }
-        }
-      });
-    }
-  });
-
-
-  /* Tablet Carousel 3 */
-  document.addEventListener('DOMContentLoaded', function () {
-    const tabletCarousel3 = document.querySelector('#tablet-carousel-3');
-    if (tabletCarousel3 && tabletCarousel3.children.length > 0) {
-      new OwlCarousel('#tablet-carousel-3', {
-        items: 4,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          768: { items: 2 },
-          992: { items: 4 }
-        }
-      });
-    }
-  });
-
-	/* Timer Product Carousel */
-  document.addEventListener('DOMContentLoaded', function () {
-    const timerProductCarousel = document.querySelector('#timer-product-carousel');
-    if (timerProductCarousel && timerProductCarousel.children.length > 0) {
-      new OwlCarousel('#timer-product-carousel', {
-        items: 1,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 2 },
-          992: { items: 1 }
-        }
-      });
-    }
-  });
-
-	/* Client Carousel */
-  document.addEventListener('DOMContentLoaded', function () {
-    const clientCarousel = document.querySelector('#client-carousel');
-    if (clientCarousel && clientCarousel.children.length > 0) {
-      new OwlCarousel('#client-carousel', {
-        items: 1,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: false,
-        dots: true,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-      });
-    }
-  });
-
-	/* Blog Post Carousel */
-  document.addEventListener('DOMContentLoaded', function () {
-    const blogPostCarousel = document.querySelector('#blog-post-carousel');
-    if (blogPostCarousel && blogPostCarousel.children.length > 0) {
-      new OwlCarousel('#blog-post-carousel', {
-        items: 1,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: false,
-        dots: true,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-      });
-    }
-  });
-
-	/* Logo Carousel */
-	document.addEventListener('DOMContentLoaded', function () {
-    const logoCarousel = document.querySelector('#logo-carousel');
-    if (logoCarousel && logoCarousel.children.length > 0) {
-      new OwlCarousel('#logo-carousel', {
-        items: 4,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: false,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 2 },
-          576: { items: 3 },
-          768: { items: 4 },
-          992: { items: 4 },
-          1200: { items: 4 }
-        }
-      });
-    }
-  });
-
-  /* Single Product */
-  document.addEventListener('DOMContentLoaded', function () {
-    const singleProductCarousel = document.querySelector('#single-product');
-    if (singleProductCarousel && singleProductCarousel.children.length > 0) {
-      new OwlCarousel('#single-product', {
-        items: 1,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          768: { items: 1 }
-        }
-      });
-    }
-  });
-
-  /* Releted Product */
-  document.addEventListener('DOMContentLoaded', function () {
-    const relatedProductsCarousel = document.querySelector('#related-products-carousel');
-    if (relatedProductsCarousel && relatedProductsCarousel.children.length > 0) {
-      new OwlCarousel('#related-products-carousel', {
-        items: 5,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          479: { items: 1 },
-          768: { items: 2 },
-          980: { items: 3 },
-          1199: { items: 4 }
-        }
-      });
-    }
-  });
-
-  /* Upsell Product */
-  document.addEventListener('DOMContentLoaded', function () {
-    const upsellProductsCarousel = document.querySelector('#upsell-products-carousel');
-    if (upsellProductsCarousel && upsellProductsCarousel.children.length > 0) {
-      new OwlCarousel('#upsell-products-carousel', {
-        items: 5,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        mouseDrag: true,
-        touchDrag: true,
-        lazyLoad: true,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-          0: { items: 1 },
-          479: { items: 1 },
-          768: { items: 2 },
-          980: { items: 3 },
-          1199: { items: 4 }
-        }
-      });
-    }
-  });
-
-/*----------------------------
  Countdown
 ------------------------------ */
 	$('[data-countdown]').each(function() {
@@ -582,17 +77,81 @@ document.addEventListener('click', function(event) {
 /*----------------------------
  price-slider active
 ------------------------------ */
-	  $( "#slider-range" ).slider({
-	   range: true,
-	   min: 99,
-	   max: 700,
-	   values: [ 99, 700 ],
-	   slide: function( event, ui ) {
-		$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-	   }
-	  });
-	  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-	   " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+// document.addEventListener('DOMContentLoaded', function () {
+//   // Инициализация элементов
+//   const slider = document.getElementById('slider-range');
+//   const range = slider.querySelector('.ui-slider-range');
+//   const handleMin = document.getElementById('handle-min');
+//   const handleMax = document.getElementById('handle-max');
+//   const amount = document.getElementById('amount');
+
+//   // Настройки
+//   const minValue = 99;
+//   const maxValue = 700;
+//   let currentMin = minValue;
+//   let currentMax = maxValue;
+
+//   // Обновление позиции ползунков
+//   function updateSlider() {
+//     const minPercent = ((currentMin - minValue) / (maxValue - minValue)) * 100;
+//     const maxPercent = ((currentMax - minValue) / (maxValue - minValue)) * 100;
+
+//     handleMin.style.left = `${minPercent}%`;
+//     handleMax.style.left = `${maxPercent}%`;
+//     range.style.left = `${minPercent}%`;
+//     range.style.width = `${maxPercent - minPercent}%`;
+
+//     amount.value = `$${currentMin} - $${currentMax}`;
+//   }
+
+//   // Перетаскивание ползунков
+//   function handleDrag(event, handle, isMin) {
+//     const sliderRect = slider.getBoundingClientRect();
+//     const sliderWidth = sliderRect.width;
+
+//     function moveAt(x) {
+//       let newLeft = ((x - sliderRect.left) / sliderWidth) * 100;
+//       if (newLeft < 0) newLeft = 0;
+//       if (newLeft > 100) newLeft = 100;
+
+//       const value = Math.round((newLeft / 100) * (maxValue - minValue) + minValue);
+
+//       if (isMin) {
+//         if (value < currentMax) {
+//           currentMin = value;
+//         }
+//       } else {
+//         if (value > currentMin) {
+//           currentMax = value;
+//         }
+//       }
+//       updateSlider();
+//     }
+
+//     function onMouseMove(e) {
+//       moveAt(e.clientX);
+//     }
+
+//     document.addEventListener('mousemove', onMouseMove);
+
+//     document.addEventListener('mouseup', function onMouseUp() {
+//       document.removeEventListener('mousemove', onMouseMove);
+//       document.removeEventListener('mouseup', onMouseUp);
+//     }, { once: true });
+//   }
+
+//   // События для ползунков
+//   handleMin.addEventListener('mousedown', (event) => {
+//     handleDrag(event, handleMin, true);
+//   });
+
+//   handleMax.addEventListener('mousedown', (event) => {
+//     handleDrag(event, handleMax, false);
+//   });
+
+//   // Инициализация
+//   updateSlider();
+// });
 
 /*----------------------------
   Simple Lence Active
@@ -631,6 +190,75 @@ scrollUp({
 	})
 
 })(jQuery);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Кнопка открытия основного меню
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+  const menuNav = document.querySelector('.mobile-menu-nav');
+
+  menuBtn.addEventListener('click', function () {
+    menuNav.classList.toggle('mobile-menu-show');
+  });
+
+  // Кнопки подменю
+  const subMenuBtns = document.querySelectorAll('.sub-menu-btn');
+
+  subMenuBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (event) {
+      event.preventDefault(); // Предотвращаем переход по ссылке
+      const subMenu = btn.nextElementSibling;
+
+      // Проверяем, есть ли подменю
+      if (subMenu && subMenu.classList.contains('sub-menu')) {
+        subMenu.classList.toggle('sub-menu-show');
+      }
+    });
+  });
+});
+
+// const menuBtn = document.querySelector('.mobile-menu-btn');
+// const mobileNav = document.querySelector('.mobile-menu-nav');
+// menuBtn.addEventListener('click', () => {
+//   mobileNav.classList.toggle('show'); // Показать/скрыть меню
+// });
+
+// // Открытие подменю
+// const menuGroups = document.querySelectorAll('.mobile-menu-group > a');
+// menuGroups.forEach((group) => {
+//   group.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     const subMenu = group.nextElementSibling;
+//     if (subMenu) {
+//       subMenu.classList.toggle('show');
+//     }
+//   });
+// });
+
+
+// const mobileNav = document.querySelector('.mobile-menu-nav')
+// const mobileBtn = document.querySelector('.mobile-menu-btn')
+
+// mobileBtn.addEventListener('click', function() {
+//   console.log(mobileNav.style.display)
+//   if (mobileNav.style.display === ('' || 'none')) {
+//   mobileNav.style.display = 'block'
+//   mobileNav.style.transform = 'translateY(0)'
+//   } else {
+//     console.log(1)
+//   }
+
+// })
+
+// document.addEventListener('click', function(event) {
+//   if (!mobileNav.contains(event.target) && event.target !== mobileNav) {
+//     mobileNav.style.display = 'none'
+//     mobileNav.style.transform = 'translateY(-395px)'
+//   } else {
+
+
+//   }
+// })
 
 
 

@@ -32,3 +32,11 @@ new Swiper('.small-slider', {
     clickable: true,
   },
 })
+
+new Swiper('.brandLogo-slider', {
+  slidesPerView: 4,
+})
+
+new Swiper('.productThumbnail-swiper', {
+  slidesPerView: 4,
+})
