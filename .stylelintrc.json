@@ -401,6 +401,7 @@
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
     "declaration-no-important": null,
+    "declaration-block-single-line-max-declarations": null,
     "color-function-notation": null,
     "alpha-value-notation": null,
     "property-no-vendor-prefix": null,
@@ -524,7 +525,7 @@
     ],
     "font-family-name-quotes": "always-unless-keyword",
     "font-family-no-duplicate-names": true,
-    "font-weight-notation": "numeric",
+    "font-weight-notation": null,
     "keyframe-declaration-no-important": true,
     "length-zero-no-unit": true,
     "max-nesting-depth": null,
@@ -536,11 +537,12 @@
         "severity": "warning"
       }
     ],
-    "number-max-precision": 5,
+    "number-max-precision":10,
     "property-no-unknown": [
       true,
       {
-        "checkPrefixed": true
+        "checkPrefixed": true,
+        "ignoreProperties": ["-webkit-text-decoration-skip-ink"]
       }
     ],
     "rule-empty-line-before": [
@@ -557,6 +559,9 @@
   },
   "overrides": [{
     "files": ["src/scss/*/**.scss"],
-    "customSyntax": "postcss-scss"
+    "customSyntax": "postcss-scss",
+    "rules": {
+      "declaration-block-no-duplicate-properties": null
+    }
   }]
 }
