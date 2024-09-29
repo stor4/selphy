@@ -1,16 +1,24 @@
-/* CSS Document */
+
+.simpleLens-thumbnails-container a{
+  display: inline-block;
+}
+
+.simpleLens-thumbnails-container a img{
+  display: block;
+}
+
 .simpleLens-container{
-    display: table;
     position: relative;
+    display: table;
 }
 
 .simpleLens-big-image-container {
+	position:relative;
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
-	position:relative;
-    height: 300px;
     width: 350px;
+    height: 300px;
+    text-align: center;
 }
 
 .simpleLens-big-image {
@@ -18,44 +26,44 @@
 }
 
 .simpleLens-lens-image {
-    height: auto !important;
-    width: 350px;
-    display: inline-block;
-    text-align: center;
-    margin:0;
-    box-shadow:none;
-    float:none;
     position:relative;
+    display: inline-block;
+    float:none;
+    margin:0;
+    width: 350px;
+    height: auto !important;
+    box-shadow:none;
+    text-align: center;
 }
 
 .simpleLens-mouse-cursor{
+	position:absolute;
+	left:0;
+	top:0;
+	border:2px solid #999;
 	background-color:#CCC;
 	opacity:0.2;
 	filter: alpha(opacity = 20);
-	position:absolute;
-	top:0;
-	left:0;
-	border:2px solid #999;
 	cursor:none;
 }
 
 .simpleLens-lens-element {
-    background-color: #FFFFFF;
-	border:2px solid #999;
-    height: 400px;
-    left: 105%;
-    overflow: hidden;
     position: absolute;
+    left: 105%;
     top: 0;
-    width: 480px;
     z-index: 9999;
+    overflow: hidden;
+	border:2px solid #999;
+    width: 480px;
+    height: 400px;
     text-align: center;
+    background-color: #FFF;
 }
 
 .simpleLens-lens-element img{
     position:relative;
-    top:0;
     left:0;
+    top:0;
     width:auto !important;
     max-width:none !important;
 }

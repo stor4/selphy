@@ -400,7 +400,7 @@
     ],
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
-    "declaration-no-important": true,
+    "declaration-no-important": null,
     "color-function-notation": null,
     "alpha-value-notation": null,
     "property-no-vendor-prefix": null,
@@ -529,7 +529,7 @@
     "length-zero-no-unit": true,
     "max-nesting-depth": null,
     "no-descending-specificity": null,
-    "no-duplicate-selectors": true,
+    "no-duplicate-selectors": null,
     "no-empty-source": [
       true,
       {

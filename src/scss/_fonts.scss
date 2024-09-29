@@ -1,12 +1,12 @@
 // @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
 
 @font-face {
-  font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
   src: url('../fonts/fontawesome-webfont.eot?v=4.5.0#iefix') format('embedded-opentype'),
        url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),
        url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),
        url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype');
-  font-weight: normal;
+  font-family: 'FontAwesome';
+  font-weight: 400;
   font-style: normal;
 }
