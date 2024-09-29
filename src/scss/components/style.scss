@@ -1056,6 +1056,7 @@ h2.product-name a{
   line-height: 37px;
   padding: 0 13px;
   width: 40px;
+  padding-bottom: 1px;
 }
 .product-actions button.button span {
   -moz-border-bottom-colors: none;
@@ -1166,6 +1167,7 @@ button.button {
 	background: var(--footer-bottom) none repeat scroll 0 0;
 	float: left;
 	transition: all 0.3s ease 0s;
+  height: 38px;
 }
 .add-to-link ul>li button{
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
@@ -1812,7 +1814,7 @@ a.facebook.fa.fa-facebook {
   background: #4f66aa none repeat scroll 0 0;
 }
 a.twitter.fa.fa-twitter {
-  background: #399bff none repeat scroll 0 0;
+  background: #000000 none repeat scroll 0 0;
 }
 a.google.fa.fa-google-plus {
   background: #ea684a none repeat scroll 0 0;
@@ -1820,6 +1822,21 @@ a.google.fa.fa-google-plus {
 a.instagram.fa.fa-instagram {
   background: #b00f0f none repeat scroll 0 0;
 }
+a.twitter.fa.fa-twitter,
+a.facebook.fa.fa-facebook,
+a.instagram.fa.fa-instagram,
+a.google.fa.fa-google-plus {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 28px;
+    width: 28px;
+  }
+}
+
 .social-footer .link-follow li a:hover{
 	background: #e3e3e3 none repeat scroll 0 0;
 	color: var(--text2);
@@ -4409,8 +4426,31 @@ width: 100%;}
   border-radius: 5px;
 }
 
+.fa-refresh {
+  position: relative;
 
+  &::after {
+    background-image: url(../../img/refresh.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -14px;
+    left: -9px;
+    width: 18px;
+    height: 18px;
+    content: '';
+  }
+}
 
+// .fa-refresh:before {
+//   background-image: url(../../img/refresh.svg);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   position: absolute;
+//   top: 0;
+//   width: 14px;
+//   height: 14px;
+// }
 
 
 
