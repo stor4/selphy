@@ -54,10 +54,10 @@
 									<div class="layout-title">
 										<h2>Price</h2>
 									</div>
-									<div id="slider-range"></div>
-									<p>
-									  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-									</p>
+                  @include('partials/rangeSlider.html', {
+                    'min': 0,
+                    'max': 500
+                  })
 									<button class="btn btn-default">Filter</button>
 								</div>
 							</div><!-- End Price Filter Area -->
