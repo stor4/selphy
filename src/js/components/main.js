@@ -193,7 +193,6 @@ scrollUp({
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Кнопка открытия основного меню
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const menuNav = document.querySelector('.mobile-menu-nav');
 
@@ -201,21 +200,35 @@ document.addEventListener('DOMContentLoaded', function () {
     menuNav.classList.toggle('mobile-menu-show');
   });
 
-  // Кнопки подменю
   const subMenuBtns = document.querySelectorAll('.sub-menu-btn');
 
   subMenuBtns.forEach(function (btn) {
     btn.addEventListener('click', function (event) {
-      event.preventDefault(); // Предотвращаем переход по ссылке
+      event.preventDefault();
       const subMenu = btn.nextElementSibling;
 
-      // Проверяем, есть ли подменю
       if (subMenu && subMenu.classList.contains('sub-menu')) {
         subMenu.classList.toggle('sub-menu-show');
       }
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const pagesDropdown = document.querySelector('.sub-menu-pages')
+  const pagesDropdownBtn = document.querySelector('.sub-menu-pages-btn')
+
+  pagesDropdownBtn.addEventListener('click', function () {
+    pagesDropdown.classList = 'sub-menu sub-menu-pages-open'
+  })
+
+  document.addEventListener('click', function(event) {
+    if (!pagesDropdown.contains(event.target) && event.target !== pagesDropdownBtn) {
+      pagesDropdown.classList = 'sub-menu sub-menu-pages'
+    }
+  })
+})
+
 
 // const menuBtn = document.querySelector('.mobile-menu-btn');
 // const mobileNav = document.querySelector('.mobile-menu-nav');

@@ -1868,14 +1868,14 @@ font-size: 14px;
 	display: inline-block;
 	margin-top: 15px;
 	border-bottom: 1px solid var(--primary2);
-	padding-right: 30px;
+	padding-right: 16px;
 	font-weight: 500;
 	font-size: 12px;
 	color: #0f93d2;
 }
 
 .single-blog-post-content>a::after{
-	content: "";
+	content: "...";
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -2153,15 +2153,30 @@ a.google.fa.fa-google-plus {
 }
 
 p.phone::before {
-  content: "";
+	content: '';
+	width: 15px;
+  height: 15px;
+  background-image: url(../../img/phone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 p.email::before {
-  content: "";
+	content: '';
+	width: 15px;
+  height: 15px;
+  background-image: url(../../img/mail.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 p.adress::before {
-  content: "";
+	content: '';
+	width: 15px;
+  height: 15px;
+  background-image: url(../../img/home.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .contact-info p::before {
@@ -2455,7 +2470,16 @@ margin-right: 15px;
 }
 
 .qty-button .box-icon.button-plus::before {
-  content: "";
+	content: '';
+	width: 10px;
+  height: 10px;
+  background-image: url(../../img/right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+	transform: rotate(-90deg) translateY(-50%);
+	position: absolute;
+	top: 4px;
+	left: 50%;
 }
 
 .qty-button .box-icon {
@@ -2487,7 +2511,16 @@ margin-right: 15px;
 }
 
 .qty-button .box-icon.button-minus::before {
-  content: "";
+	content: '';
+	width: 10px;
+  height: 10px;
+  background-image: url(../../img/right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+	transform: rotate(90deg) translate(75%, 50%);
+	position: absolute;
+	bottom: 4px;
+	left: 50%;
 }
 
 .qty-button .box-icon::before {
@@ -2950,6 +2983,7 @@ margin-right: 15px;
 
 .breadcurb-area .breadcrumb li.home {
   position: relative;
+	margin-right: 5px;
 
   a {
     margin-left: 15px;
@@ -5132,7 +5166,12 @@ max-width: 100%;}
   }
 }
 
-
+.main-menu .sub-menu-pages {
+	&-open {
+		display: block;
+		transform: none;
+	}
+}
 
 
 
