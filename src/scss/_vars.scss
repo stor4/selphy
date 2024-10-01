@@ -12,18 +12,19 @@
   // colors
   --primary: #0091d5;
   --primary2: #00a9e0;
+  --primary3: #0083c1;
   --secondary: #fbb203;
   --text-body: #5c5c5c
   --text: #6a6a6a;
   --text-white: #fff;
   --text2: #222;
+  --text3: #666666;
   --background: #fff;
-  --header-top: #0083c1;
   --light-color: #e5e5e5;
   --footer-bottom: #3b3d3d;
   --footer-top: #f0f0f0;
-  --scrollUp: #73D33F;
-  --scrollUpHover: #FF9C00;
+  --scrollUp: var(--primary3);
+  --scrollUpHover: var(--secondary);
   --label-new: #73D33F;
   --label-hot: #FF9C00;
 }
