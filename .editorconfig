@@ -2,12 +2,13 @@
 root = true
 
 [*]
-indent_style = space tab
+indent_style = space tab   # Use space or tab (but not both)
 indent_size = 2
-end_of_line = lf
+
 charset = utf-8
 trim_trailing_whitespace = true
-insert_final_newline = true
+
 
 [*.md]
 trim_trailing_whitespace = false
+

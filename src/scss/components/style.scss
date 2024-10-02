@@ -220,6 +220,10 @@ body {
 	background: rgba(0, 0, 0, 0) url("../../img/icon/lock.webp") no-repeat scroll 0 0;
 }
 
+.menu-container {
+	position: relative;
+}
+
 .header-top-right{
 	float:right;
 }
@@ -230,7 +234,8 @@ body {
 }
 
 .header-link{
-	float:left;
+	position: absolute;
+	right: 0;
 }
 
 .header-link p{
@@ -275,24 +280,25 @@ body {
 	background: rgba(0, 0, 0, 0) url("../../img/icon/english1.webp") no-repeat scroll 0 3px;
 }
 
-.header-link ul li a.usd::before{
-	content: "";
-	left: 0;
-	float: left;
-	margin-right: 10px;
-	width: 15px;
-	height: 20px;
-	background: rgba(0, 0, 0, 0) url("../../img/icon/imgtop4.webp") no-repeat scroll 0 2px;
+.header-link ul li a.account {
+	i::before {
+		content: none;
+	}
+
+	padding-right: 0;
 }
 
-.header-link ul li a.account::before{
-	content: "";
-	left: 0;
-	float: left;
-	margin-right: 10px;
-	width: 15px;
-	height: 20px;
-	background: rgba(0, 0, 0, 0) url("../../img/icon/imgtop3.webp") no-repeat scroll 0 2px;
+.main-menu-lang {
+	padding: 17px 15px 16px !important;
+}
+
+.header-link ul li {
+	margin-right: 15px;
+	padding: 0;
+}
+
+.main-menu .header-link ul li a .usd {
+	padding: 0;
 }
 
 .header-link ul ul{
@@ -303,7 +309,6 @@ body {
 	display: none;
 	list-style: outside none none;
 	margin: 0;
-	min-width: 107px;
 	box-shadow: 1px 1px 3px var(--text3);
 	text-align: left;
 	background: var(--text-white) none repeat scroll 0 0;
@@ -328,7 +333,7 @@ body {
 	border-radius: 0;
 	padding: 11px 15px;
 	height: inherit;
-	min-width: 113px;
+	min-width: 69px;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 11px;
@@ -1198,39 +1203,68 @@ h2.product-name a{
 	display: inline-block;
 	margin-top: 20px;
 	background: var(--primary) none repeat scroll 0 0;
+
+	.btn-cart {
+		display: flex;
+	}
+}
+
+.product-actions {
+	.button {
+		position: relative;
+		display: flex;
+    align-items: center;
+		padding-left: 15px;
+		width: 100%;
+
+		i {
+			position: absolute;
+			right: 10px;
+		}
+	}
 }
 
 .product-actions button.button i.fa.fa-shopping-cart {
   float: left;
-  padding: 0 13px;
+	border-radius: 15px;
+	padding: 2px 14px 2px 15px;
   padding-bottom: 1px;
-  width: 40px;
   font-size: 14px;
   line-height: 37px;
   color: var(--text-white);
   background: var(--primary3) none repeat scroll 0 0;
+
+	&::before {
+		font-size: 17px;
+	}
 }
 
 .product-actions button.button span {
-  display: inline-block;
-  border-style: solid solid solid none;
-  border-width: 2px 2px 2px 0;
-  border-color: var(--primary3);
-  border-image: none;
-  padding: 3px 10px 2px 14px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 29px;
-  white-space: nowrap;
-  text-align: center;
-  text-transform: uppercase;
-  color: #444;
-  background: var(--text-white) none repeat scroll 0 0;
-  transition:all 0.3s;
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
+	display: inline-block;
+
+	/* border-style: solid solid solid none; */
+	border-width: 2px 2px 2px 0;
+
+	/* border-color: var(--primary3); */
+	-o-border-image: none;
+	border-image: none;
+	border-radius: 15px;
+	padding: 3px 10px 2px 14px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 29px;
+	white-space: nowrap;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--text2);
+	background: var(--text-white) none repeat scroll 0 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+
+	&:hover {
+		color: #444;
+		background: transparent;
+	}
 }
 
 button.button {
@@ -1239,7 +1273,12 @@ button.button {
   padding: 0;
   width: auto;
   background: transparent none repeat scroll 0 0;
-  cursor: pointer;
+	cursor: default;
+
+	&:hover {
+		color: #444;
+		background: transparent;
+	}
 }
 
 .button {
@@ -2156,7 +2195,7 @@ p.phone::before {
 	content: '';
 	width: 15px;
   height: 15px;
-  background-image: url(../../img/phone.png);
+  background-image: url("../../img/phone.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2165,7 +2204,7 @@ p.email::before {
 	content: '';
 	width: 15px;
   height: 15px;
-  background-image: url(../../img/mail.png);
+  background-image: url("../../img/mail.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2174,7 +2213,7 @@ p.adress::before {
 	content: '';
 	width: 15px;
   height: 15px;
-  background-image: url(../../img/home.svg);
+  background-image: url("../../img/home.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2201,17 +2240,17 @@ p.adress::before {
 .footer-bottom{
 	padding: 14px 0;
 	text-align: center;
-	background: var(--light-color) none repeat scroll 0 0;
 	color: var(--text3);
+	background: var(--light-color) none repeat scroll 0 0;
 }
 
 .copyright p{
 	// float: left;
 	margin: 10px 0;
-	font-size: 14px;
-	color: var(--text3);
 	width: 100%;
+	font-size: 14px;
   text-align: center;
+	color: var(--text3);
 }
 
 .copyright a{
@@ -2474,15 +2513,15 @@ margin-right: 15px;
 
 .qty-button .box-icon.button-plus::before {
 	content: '';
+	position: absolute;
+	left: 50%;
+	top: 4px;
 	width: 10px;
   height: 10px;
-  background-image: url(../../img/right.png);
+  background-image: url("../../img/right.png");
   background-size: contain;
   background-repeat: no-repeat;
 	transform: rotate(-90deg) translateY(-50%);
-	position: absolute;
-	top: 4px;
-	left: 50%;
 }
 
 .qty-button .box-icon {
@@ -2515,15 +2554,15 @@ margin-right: 15px;
 
 .qty-button .box-icon.button-minus::before {
 	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 4px;
 	width: 10px;
   height: 10px;
-  background-image: url(../../img/right.png);
+  background-image: url("../../img/right.png");
   background-size: contain;
   background-repeat: no-repeat;
 	transform: rotate(90deg) translate(75%, 50%);
-	position: absolute;
-	bottom: 4px;
-	left: 50%;
 }
 
 .qty-button .box-icon::before {
@@ -5176,8 +5215,18 @@ max-width: 100%;}
 	}
 }
 
+@media screen and (width <= 1200px) {
+	.main-menu ul > li > a {
+    display: block;
+    padding: 17px 26px 16px 0;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--text2);
+	}
 
-
-
-
-
+	.header-link ul li {
+    margin-right: 1px;
+	}
+}

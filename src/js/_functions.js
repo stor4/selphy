@@ -50,12 +50,12 @@
 // });
 
 // Подключение свайпера
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-Swiper.use([Navigation, Pagination]);
-const swiper = new Swiper(el, {
-  slidesPerView: 'auto',
-});
+// import Swiper from 'swiper';
+// import { Navigation, Pagination } from 'swiper/modules';
+// Swiper.use([Navigation, Pagination]);
+// const swiper = new Swiper(el, {
+//   slidesPerView: 'auto',
+// });
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';

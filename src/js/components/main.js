@@ -73,3 +73,17 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+  const mainMenuBtn = document.querySelector('.category-menu-title');
+  const mainMenuNav = document.querySelector('.categorie-list');
+
+  mainMenuBtn.addEventListener('click', function () {
+    mainMenuNav.classList.toggle('mobile-menu-show');
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!mainMenuNav.contains(event.target) && event.target !== mainMenuBtn) {
+      pagesDropdown.classList = 'categorie-list'
+    }
+  })
+});
