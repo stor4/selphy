@@ -5215,6 +5215,20 @@ max-width: 100%;}
 	}
 }
 
+.header-searchbar {
+	display: flex;
+	align-items: center;
+
+	.header-search {
+		width: 100%;
+	}
+}
+
+.header-cart {
+	display: flex;
+	align-items: center;
+}
+
 @media screen and (width <= 1200px) {
 	.main-menu ul > li > a {
     display: block;

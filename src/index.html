@@ -107,384 +107,94 @@
                   <div class="swiper products-carousel bestsell-carousel">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s1.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button">
-                                <span>$99.90</span>
-                                <i class="fa fa-shopping-cart">&nbsp;</i>
-                              </button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s1.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s2.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Aliquam consequat</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s2.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Fusce aliquam</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Fusce aliquam',
+                          'img': './img/products/s3.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s4.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Pellentesque habitant </a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Pellentesque habitant ',
+                          'img': './img/products/s4.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s5.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Quisque in arcu</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Quisque in arcu',
+                          'img': './img/products/s5.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s1.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Donec ac tempus </a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Donec ac tempus',
+                          'img': './img/products/s1.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s6.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">voluptas nulla</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$232.00</span>$132.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Voluptas nulla',
+                          'img': './img/products/s6.webp',
+                          'price': '$132.00',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Etiam gravida</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Etiam gravida',
+                          'img': './img/products/s3.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s8.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s8.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s9.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s9.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                     </div>
                   </div>
@@ -496,384 +206,94 @@
                    <div class="swiper products-carousel mostViewed-carousel">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Donec non est</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s1.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s7.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Cras neque metus</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s2.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s5.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Fusce aliquam</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$175.00</span>$125.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Fusce aliquam',
+                          'img': './img/products/s3.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Cras neque metus</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Pellentesque habitant ',
+                          'img': './img/products/s4.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s10.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">consequences</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Quisque in arcu',
+                          'img': './img/products/s5.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s7.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Nunc facilisis</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Donec ac tempus',
+                          'img': './img/products/s1.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s6.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">occaecati cupiditate</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Voluptas nulla',
+                          'img': './img/products/s6.webp',
+                          'price': '$132.00',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s4.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Etiam gravida',
+                          'img': './img/products/s3.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s8.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Accumsan elit</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s8.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s6.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s9.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                     </div>
                    </div>
@@ -885,384 +305,94 @@
                   <div class="swiper products-carousel random-carousel">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s5.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Etiam gravida</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$111.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s1.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s2.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s2.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s9.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html"> Donec ac tempus </a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$114.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Fusce aliquam',
+                          'img': './img/products/s3.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Pellentesque habitant ',
+                          'img': './img/products/s4.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s1.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Nunc facilisis</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Quisque in arcu',
+                          'img': './img/products/s5.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s2.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">consequences</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Donec ac tempus',
+                          'img': './img/products/s1.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s6.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Voluptas nulla',
+                          'img': './img/products/s6.webp',
+                          'price': '$132.00',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s5.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Quisque in arcu</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Etiam gravida',
+                          'img': './img/products/s3.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s4.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s8.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Cras neque metus</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s9.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                     </div>
                   </div>
@@ -1673,7 +803,98 @@
                           </div><!-- End Single Product Content -->
                         </div>
                       </div>
-                    </div>
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Proin lectus ipsum',
+                            'img': './img/products/s1.webp',
+                            'price': '$99.90',
+                            'rate': '',
+                            'tag': 'Hot',
+                          })
+                        </div>
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Proin lectus ipsum',
+                            'img': './img/products/s2.webp',
+                            'price': '$99.90',
+                            'rate': '',
+                            'tag': 'New',
+                          })
+                        </div>
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Fusce aliquam',
+                            'img': './img/products/s3.webp',
+                            'price': '$99.90',
+                            'rate': '',
+                            'tag': 'Hot',
+                          })
+                        </div>
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Pellentesque habitant ',
+                            'img': './img/products/s4.webp',
+                            'price': '$99.90',
+                            'rate': '',
+                            'tag': 'New',
+                          })
+                        </div>
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Quisque in arcu',
+                            'img': './img/products/s5.webp',
+                            'price': '$99.90',
+                            'rate': '',
+                            'tag': 'Hot',
+                          })
+                        </div>
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Donec ac tempus',
+                            'img': './img/products/s1.webp',
+                            'price': '$99.90',
+                            'rate': '',
+                            'tag': 'New',
+                          })
+                        </div>
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Voluptas nulla',
+                            'img': './img/products/s6.webp',
+                            'price': '$132.00',
+                            'rate': '',
+                            'tag': 'Hot',
+                          })
+                        </div>
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Etiam gravida',
+                            'img': './img/products/s3.webp',
+                            'price': '$99.00',
+                            'rate': '',
+                            'tag': 'New',
+                          })
+                        </div>
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Proin lectus ipsum',
+                            'img': './img/products/s8.webp',
+                            'price': '$99.00',
+                            'rate': '',
+                            'tag': 'Hot',
+                          })
+                        </div>
+                        <div class="swiper-slide">
+                          @include('partials/sliderItem.html', {
+                            'title': 'Proin lectus ipsum',
+                            'img': './img/products/s9.webp',
+                            'price': '$99.00',
+                            'rate': '',
+                            'tag': 'New',
+                          })
+                        </div>
+                      </div>
                    </div>
                 <!-- End Product View Carousel -->
 								</div><!-- End Product View-->
@@ -1706,308 +927,94 @@
                    <div class="swiper products-carousel productView2-carousel">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s9.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html"> Donec ac tempus </a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$114.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s1.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s2.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s1.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Nunc facilisis</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Fusce aliquam',
+                          'img': './img/products/s3.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s2.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">consequences</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Pellentesque habitant ',
+                          'img': './img/products/s4.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s6.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Quisque in arcu',
+                          'img': './img/products/s5.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-new">New</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s5.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Quisque in arcu</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Donec ac tempus',
+                          'img': './img/products/s1.webp',
+                          'price': '$99.90',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s4.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Proin lectus ipsum</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Voluptas nulla',
+                          'img': './img/products/s6.webp',
+                          'price': '$132.00',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
                       </div>
                       <div class="swiper-slide">
-                        <div class="singel-product single-product-col">
-                          <div class="label-pro-sale">hot</div>
-                          <!-- Single Product Image -->
-                          <div class="single-product-img">
-                            <a href="#"><img src="./img/products/s3.webp" alt="product"></a>
-                          </div>
-                          <!-- Single Product Content -->
-                          <div class="single-product-content">
-                            <h2 class="product-name"><a title="Proin lectus ipsum" href="product-details.html">Cras neque metus</a></h2>
-                            <div class="ratings">
-                              <div class="rating-box">
-                                <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-price">
-                              <p><span>$345.00</span>$99.00</p>
-                            </div>
-                            <!-- Single Product Actions -->
-                            <div class="product-actions">
-                              <button class="button btn-cart" title="Add to Cart" type="button"><i class="fa fa-shopping-cart">&nbsp;</i><span>Add to Cart</span></button>
-                              <div class="add-to-link">
-                                <ul class="">
-                                  <li class="quic-view"><button type="button" data-bs-target="#productModal" data-bs-toggle="modal"><i class="fa fa-search"></i>Quick view</button></li>
-                                  <li class="wishlist"><a href="#"><i class="fa fa-heart"></i></a></li>
-                                  <li class="refresh"><a href="#"><i class="fa fa-refresh"></i></a></li>
-                                </ul>
-                              </div>
-                            </div><!-- End Single Product Actions -->
-                          </div><!-- End Single Product Content -->
-                        </div>
+                        @include('partials/sliderItem.html', {
+                          'title': 'Etiam gravida',
+                          'img': './img/products/s3.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'New',
+                        })
+                      </div>
+                      <div class="swiper-slide">
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s8.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'Hot',
+                        })
+                      </div>
+                      <div class="swiper-slide">
+                        @include('partials/sliderItem.html', {
+                          'title': 'Proin lectus ipsum',
+                          'img': './img/products/s9.webp',
+                          'price': '$99.00',
+                          'rate': '',
+                          'tag': 'New',
+                        })
                       </div>
                     </div>
                    </div>

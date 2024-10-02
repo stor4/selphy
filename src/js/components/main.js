@@ -82,8 +82,25 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   document.addEventListener('click', function(event) {
-    if (!mainMenuNav.contains(event.target) && event.target !== mainMenuBtn) {
-      pagesDropdown.classList = 'categorie-list'
+    if (!mainMenuBtn.contains(event.target) && !mainMenuNav.contains(event.target) && event.target !== mainMenuNav) {
+      mainMenuNav.classList = 'categorie-list'
     }
   })
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const mainMenuMoreBtn = document.querySelector('.rx-default');
+  const mainMenuMore = document.querySelectorAll('.rx-child');
+  let menuOpen = false
+
+  mainMenuMoreBtn.addEventListener('click', function () {
+    if (menuOpen === false) {
+      mainMenuMore.forEach((item) => item.style.display = 'block')
+      menuOpen = true
+    } else {
+      mainMenuMore.forEach((item) => item.style.display = 'none')
+      menuOpen = false
+    }
+
+  });
 });
