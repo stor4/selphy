@@ -5264,8 +5264,8 @@ max-width: 100%;}
 
 @include small-tablet {
 	.custom-tab .nav-tabs > li > a {
-		min-width: 230px;
 		margin: 4px;
+		min-width: 230px;
 		text-align: center;
 	}
 }
