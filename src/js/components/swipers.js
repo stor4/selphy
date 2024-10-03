@@ -1,4 +1,6 @@
 import Swiper from 'swiper';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+Swiper.use([Navigation, Pagination, Autoplay]);
 
 const mainSlider = new Swiper(".mainSlider", {
   pagination: {
@@ -6,7 +8,7 @@ const mainSlider = new Swiper(".mainSlider", {
   },
   loop: true,
   autoplay: {
-    delay: 1000,
+    delay: 10000,
   },
 });
 
