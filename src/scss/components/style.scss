@@ -236,6 +236,14 @@ body {
 .header-link{
 	position: absolute;
 	right: 0;
+
+	.account {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 14px 5px 10px 10px;
+	}
 }
 
 .header-link p{
@@ -284,16 +292,14 @@ body {
 	i::before {
 		content: none;
 	}
-
-	padding-right: 0;
 }
 
 .main-menu-lang {
-	padding: 17px 15px 16px !important;
+	padding: 17px 10px 16px !important;
 }
 
 .header-link ul li {
-	margin-right: 15px;
+	// margin-right: 15px;
 	padding: 0;
 }
 
@@ -477,19 +483,20 @@ body {
 }
 
 .header-cart .cart{
-    position: relative;
-    display: block;
-    padding: 12px;
-    height: 44px;
-    font-size: 13px;
+	position: relative;
+	display: block;
+	padding: 12px;
+	height: 44px;
+	font-size: 13px;
 	text-align: center;
-    color: var(--text-white);
+	color: var(--text-white);
 	background: var(--secondary);
+	text-wrap: nowrap;
 }
 
 .header-cart .cart .my-cart{
-    position: relative;
-    font-weight: 700;
+	position: relative;
+	font-weight: 700;
 	font-size: 16px;
 }
 
@@ -858,6 +865,12 @@ body {
 
 .main-menu ul>li>a.active,.main-menu ul>li:hover>a{
 	color: var(--primary2);
+}
+
+.account-menu {
+	ul {
+		left: -55px !important;
+	}
 }
 
 /* ----------------------------------------
@@ -2687,6 +2700,10 @@ margin-right: 15px;
 	float: left;
 	font-family: var(--font-secondary);
 	font-size: 14px;
+}
+
+.header-link ul li {
+	margin: 0;
 }
 
 .another-home .header-link ul li a {
@@ -5232,7 +5249,7 @@ max-width: 100%;}
 @media screen and (width <= 1200px) {
 	.main-menu ul > li > a {
     display: block;
-    padding: 17px 26px 16px 0;
+    padding: 17px 23px 16px 0;
     font-weight: 600;
     font-size: 16px;
     text-decoration: none;
