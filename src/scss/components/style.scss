@@ -1947,11 +1947,11 @@ font-size: 14px;
 }
 
 .brand-logo{
+	display: flex;
 	overflow:hidden;
 	border-top: 1px solid var(--light-color);
 	border-right: 1px solid var(--light-color);
 	border-bottom: 1px solid var(--light-color);
-	display: flex;
 }
 
 .brand-logo a{
@@ -5235,6 +5235,7 @@ max-width: 100%;}
 	display: flex;
 	align-items: center;
 }
+
 .swiper-pagination-bullet-active {
 	background: var(--primary3) !important;
 }
@@ -5263,7 +5264,7 @@ max-width: 100%;}
 	}
 
 	.header-cart{
-		right: 0px;
+		right: 0;
 	}
 
 	.header-search {
