@@ -1224,6 +1224,17 @@ h2.product-name a{
 			right: 10px;
 		}
 	}
+
+	&-cart {
+		.button {
+			i {
+				position: absolute;
+				right: -30px;
+				top: -2px;
+			}
+		}
+
+	}
 }
 
 .product-actions button.button i.fa.fa-shopping-cart {
@@ -1268,10 +1279,10 @@ h2.product-name a{
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 
-	&:hover {
-		color: #444;
-		background: transparent;
-	}
+	// &:hover {
+	// 	color: #444;
+	// 	background: transparent;
+	// }
 }
 
 button.button {
@@ -2100,7 +2111,21 @@ font-size: 14px;
 }
 
 a.facebook.fa.fa-facebook {
-  background: #4f66aa none repeat scroll 0 0;
+	img {
+    left: 6px;
+    top: 6px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+	&::before {
+		content: none;
+	}
+
+	&:hover {
+		opacity: 0.2;
+	}
 }
 
 a.twitter.fa.fa-twitter {
@@ -2108,16 +2133,33 @@ a.twitter.fa.fa-twitter {
 }
 
 a.google.fa.fa-google-plus {
-  background: #ea684a none repeat scroll 0 0;
+  background: #fff none repeat scroll 0 0;
+
+	&:hover {
+		opacity: 0.2;
+	}
 }
 
 a.instagram.fa.fa-instagram {
-  background: #b00f0f none repeat scroll 0 0;
+	img {
+    left: 6px;
+    top: 6px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+	&::before {
+		content: none;
+	}
+
+	&:hover {
+		opacity: 0.2;
+	}
 }
 
+
 a.twitter.fa.fa-twitter,
-a.facebook.fa.fa-facebook,
-a.instagram.fa.fa-instagram,
 a.google.fa.fa-google-plus {
   position: relative;
 
@@ -2391,7 +2433,8 @@ p.adress::before {
 
 .quick-add-to-cart {
 	float:left;
-	overflow:hidden;
+
+	// overflow:hidden;
 }
 .quick-add-to-cart .single_add_to_cart_button:hover{background:#42414F!important}
 
